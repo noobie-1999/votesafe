@@ -1,0 +1,162 @@
+/* line 12, ../sass/charts.scss */
+body {
+  margin: 0;
+}
+
+/* line 15, ../sass/charts.scss */
+nav {
+  background-color: black;
+}
+
+/* line 18, ../sass/charts.scss */
+.logo {
+  width: 50%;
+  display: inline-block;
+}
+@media only screen and (max-width: 649px) {
+  /* line 18, ../sass/charts.scss */
+  .logo {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+}
+@media only screen and (min-width: 650px) {
+  /* line 18, ../sass/charts.scss */
+  .logo {
+    float: left;
+  }
+}
+/* line 28, ../sass/charts.scss */
+.logo .logopic {
+  width: 250px;
+}
+@media only screen and (max-width: 649px) {
+  /* line 28, ../sass/charts.scss */
+  .logo .logopic {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+}
+
+/* line 35, ../sass/charts.scss */
+.butlist {
+  padding: 0;
+  margin: 0;
+  width: 50%;
+  display: inline-block;
+}
+@media only screen and (max-width: 649px) {
+  /* line 35, ../sass/charts.scss */
+  .butlist {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+}
+@media only screen and (max-width: 649px) {
+  /* line 44, ../sass/charts.scss */
+  .butlist .butres {
+    width: 341px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+}
+@media only screen and (max-width: 500px) {
+  /* line 44, ../sass/charts.scss */
+  .butlist .butres {
+    width: 285px;
+  }
+}
+/* line 53, ../sass/charts.scss */
+.butlist li {
+  margin: 15px;
+  padding: 15px;
+  font-size: 25px;
+  display: inline-block;
+  font-family: 'Fira Sans', sans-serif;
+  color: white;
+  text-align: center;
+}
+@media only screen and (min-width: 650px) {
+  /* line 53, ../sass/charts.scss */
+  .butlist li {
+    float: right;
+  }
+}
+@media only screen and (max-width: 649px) {
+  /* line 53, ../sass/charts.scss */
+  .butlist li {
+    border: 2px solid white;
+    font-weight: bold;
+  }
+}
+@media only screen and (max-width: 500px) {
+  /* line 53, ../sass/charts.scss */
+  .butlist li {
+    font-size: 20px;
+    padding: 10px;
+  }
+}
+/* line 75, ../sass/charts.scss */
+.butlist li:hover {
+  background-color: white;
+  transition: 0.5s;
+}
+/* line 78, ../sass/charts.scss */
+.butlist li:hover a {
+  color: black;
+}
+/* line 83, ../sass/charts.scss */
+.butlist li a {
+  text-decoration: none;
+  color: white;
+}
+
+
+/* line 114, ../sass/charts.scss */
+#generate_chart {
+  margin-top:50px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  cursor: pointer;
+  width: 200px;
+  border: 2px solid black;
+  background: white;
+  color: black;
+  padding: 10px;
+  font-size: 15px;
+}
+/* line 123, ../sass/charts.scss */
+#generate_chart:hover {
+  background-color: black;
+  color: white;
+  transition: 0.5s;
+}
+/* line 130, ../sass/charts.scss */
+#chartContainer,#barchartContainer {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  display: none;
+}
+/* line 135, ../sass/charts.scss */
+#chartContainer {
+  margin-top:50px;
+  margin-bottom: 100px;
+}
+
+.charttext{
+  text-align:center;
+  width:90%;
+  margin:0 auto;
+  font-size:20px;
+  margin-top:50px;
+  font-family: 'Oswald', sans-serif;
+}

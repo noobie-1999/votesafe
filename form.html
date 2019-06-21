@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="stylesheets/form.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/hover.css"/>
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+	<title>Enter Report</title>
+</head>
+
+
+<body>
+
+<nav class="navabar">
+  <div class="logo">
+    <img class="logopic" src="img/votesafelogo.png">
+  </div>
+  <ul class="butlist">
+    <span class="butres">
+      <li class="hvr-glow">
+        <a href="">ABOUT</a>
+      </li>
+      <li class="hvr-glow">
+        <a href="">NEWSFEED</a>
+      </li>
+    </span>
+  </ul>
+</nav>
+
+
+
+
+<div class="container">
+  <form id="contact" action="" method="post">
+    <div class="col1">
+    <h3>Submit a Report</h3>
+    <h4>Fill up the form</h4>
+    <fieldset>
+      <input placeholder="Your name"  type="text" tabindex="1" required="true" autofocus>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Your Email Address" type="email" tabindex="2" required="true">
+    </fieldset>
+    <fieldset>
+      <input placeholder="Your VoterID" type="text" tabindex="3" required="true">
+    </fieldset>
+    <fieldset>
+    	<textarea placeholder="Your Response" rows="10" cols="50" required="true"></textarea>
+    </fieldset>
+    <fieldset>
+      <input type="file" name="pic" accept="image/*">
+    </fieldset>
+    </div>
+    <div class="col2">
+    <div id="map"></div>
+    <button id="get_loc" onclick="chooseLoc();return;">Get your location</button>
+    
+    </div>
+    <div class="colotp">
+    <fieldset>
+      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Generate OTP</button>
+    </fieldset>
+    </div>
+    
+  </form>
+
+
+</div>
+<script>
+var map;
+var coords;
+var yourMarker;
+function getLoc(){
+  console.log(yourMarker.getPosition().lat());
+  console.log(yourMarker.getPosition().lng());
+}
+function chooseLoc(){
+  navigator.geolocation.getCurrentPosition(function(pos){
+      coords={lat:pos.coords.latitude,lng:pos.coords.longitude};
+      console.log(coords);
+      yourMarker = new google.maps.Marker({position: coords,title:"You",icon:'http://earth.google.com/images/kml-icons/track-directional/track-0.png', map: map});
+    }, function(error){
+      alert("Choose your location");
+      yourMarker = new google.maps.Marker({position: {lat:20.5937,lng:78.9629},title:"You",icon:'http://earth.google.com/images/kml-icons/track-directional/track-0.png', map: map,draggable:true});
+      }, {
+        enableHighAccuracy: true,
+        timeout: 5000,
+        maximumAge: 0
+      });
+}
+function initMap() {
+  map = new google.maps.Map(document.getElementById('map'), {zoom: 4, center: {lat:20.5937,lng:78.9629}});
+}
+</script>
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA4Bj_IsgFn0N12RxAvpV8O0d5vnAdei50&callback=initMap">
+</script>
+</body>
+</html>

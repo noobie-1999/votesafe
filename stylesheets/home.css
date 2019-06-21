@@ -1,0 +1,197 @@
+/* line 23, ../sass/home.scss */
+body {
+  margin: 0;
+}
+
+/* line 26, ../sass/home.scss */
+.logo {
+  width: 50%;
+  display: inline-block;
+}
+@media only screen and (max-width: 649px) {
+  /* line 26, ../sass/home.scss */
+  .logo {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+}
+@media only screen and (min-width: 650px) {
+  /* line 26, ../sass/home.scss */
+  .logo {
+    float: left;
+  }
+}
+/* line 36, ../sass/home.scss */
+.logo .logopic {
+  width: 250px;
+}
+@media only screen and (max-width: 649px) {
+  /* line 36, ../sass/home.scss */
+  .logo .logopic {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+}
+
+/* line 43, ../sass/home.scss */
+.butlist {
+  padding: 0;
+  margin: 0;
+  width: 50%;
+  display: inline-block;
+}
+@media only screen and (max-width: 649px) {
+  /* line 43, ../sass/home.scss */
+  .butlist {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+}
+@media only screen and (max-width: 649px) {
+  /* line 52, ../sass/home.scss */
+  .butlist .butres {
+    width: 341px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+}
+@media only screen and (max-width: 500px) {
+  /* line 52, ../sass/home.scss */
+  .butlist .butres {
+    width: 285px;
+  }
+}
+/* line 61, ../sass/home.scss */
+.butlist li {
+  margin: 15px;
+  padding: 15px;
+  font-size: 25px;
+  display: inline-block;
+  font-family: 'Fira Sans', sans-serif;
+  color: white;
+  text-align: center;
+}
+@media only screen and (min-width: 650px) {
+  /* line 61, ../sass/home.scss */
+  .butlist li {
+    float: right;
+  }
+}
+@media only screen and (max-width: 649px) {
+  /* line 61, ../sass/home.scss */
+  .butlist li {
+    border: 2px solid white;
+    font-weight: bold;
+  }
+}
+@media only screen and (max-width: 500px) {
+  /* line 61, ../sass/home.scss */
+  .butlist li {
+    font-size: 20px;
+    padding: 10px;
+  }
+}
+/* line 83, ../sass/home.scss */
+.butlist li:hover {
+  background-color: white;
+  transition: 0.5s;
+}
+/* line 86, ../sass/home.scss */
+.butlist li:hover a {
+  color: black;
+}
+/* line 91, ../sass/home.scss */
+.butlist li a {
+  text-decoration: none;
+  color: white;
+}
+
+/* line 98, ../sass/home.scss */
+body {
+  background-image: url("../img/bg.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  -webkit-background-repeat: no-repeat;
+  -webkit-background-position: center;
+  -webkit-background-size: cover;
+  -webkit-background-attachment: fixed;
+}
+
+/* line 103, ../sass/home.scss */
+.info {
+  margin-top: 100px;
+  text-align: center;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 60%;
+}
+/* line 110, ../sass/home.scss */
+.info .infohead {
+  font-size: 30px;
+  font-weight: bold;
+}
+/* line 114, ../sass/home.scss */
+.info .infotext {
+  font-size: 20px;
+}
+
+/* line 119, ../sass/home.scss */
+.pagebuts {
+  margin-top: 150px;
+}
+/* line 121, ../sass/home.scss */
+.pagebuts .pagebut {
+  width: 33%;
+  display: inline-block;
+}
+@media only screen and (max-width: 1000px) {
+  /* line 121, ../sass/home.scss */
+  .pagebuts .pagebut {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+}
+/* line 128, ../sass/home.scss */
+.pagebuts .pagebut .pagebuttext {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-align: center;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Oswald', sans-serif;
+  border: 2px solid white;
+}
+@media only screen and (max-width: 1000px) {
+  /* line 128, ../sass/home.scss */
+  .pagebuts .pagebut .pagebuttext {
+    width: 30%;
+  }
+}
+/* line 140, ../sass/home.scss */
+.pagebuts .pagebut .pagebuttext:hover {
+  background-color: white;
+  transition: 0.5s;
+}
+/* line 143, ../sass/home.scss */
+.pagebuts .pagebut .pagebuttext:hover a {
+  color: black;
+}
+/* line 147, ../sass/home.scss */
+.pagebuts .pagebut .pagebuttext a {
+  text-decoration: none;
+  color: white;
+}

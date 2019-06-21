@@ -1,0 +1,220 @@
+/* line 12, ../sass/map.scss */
+body {
+  margin: 0;
+}
+
+/* line 15, ../sass/map.scss */
+nav {
+  background-color: black;
+}
+
+/* line 18, ../sass/map.scss */
+.logo {
+  width: 50%;
+  display: inline-block;
+}
+@media only screen and (max-width: 649px) {
+  /* line 18, ../sass/map.scss */
+  .logo {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+}
+@media only screen and (min-width: 650px) {
+  /* line 18, ../sass/map.scss */
+  .logo {
+    float: left;
+  }
+}
+/* line 28, ../sass/map.scss */
+.logo .logopic {
+  width: 250px;
+}
+@media only screen and (max-width: 649px) {
+  /* line 28, ../sass/map.scss */
+  .logo .logopic {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+}
+
+/* line 35, ../sass/map.scss */
+.butlist {
+  padding: 0;
+  margin: 0;
+  width: 50%;
+  display: inline-block;
+}
+@media only screen and (max-width: 649px) {
+  /* line 35, ../sass/map.scss */
+  .butlist {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+}
+@media only screen and (max-width: 649px) {
+  /* line 44, ../sass/map.scss */
+  .butlist .butres {
+    width: 341px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+}
+@media only screen and (max-width: 500px) {
+  /* line 44, ../sass/map.scss */
+  .butlist .butres {
+    width: 285px;
+  }
+}
+/* line 53, ../sass/map.scss */
+.butlist li {
+  margin: 15px;
+  padding: 15px;
+  font-size: 25px;
+  display: inline-block;
+  font-family: 'Fira Sans', sans-serif;
+  color: white;
+  text-align: center;
+}
+@media only screen and (min-width: 650px) {
+  /* line 53, ../sass/map.scss */
+  .butlist li {
+    float: right;
+  }
+}
+@media only screen and (max-width: 649px) {
+  /* line 53, ../sass/map.scss */
+  .butlist li {
+    border: 2px solid white;
+    font-weight: bold;
+  }
+}
+@media only screen and (max-width: 500px) {
+  /* line 53, ../sass/map.scss */
+  .butlist li {
+    font-size: 20px;
+    padding: 10px;
+  }
+}
+/* line 75, ../sass/map.scss */
+.butlist li:hover {
+  background-color: white;
+  transition: 0.5s;
+}
+/* line 78, ../sass/map.scss */
+.butlist li:hover a {
+  color: black;
+}
+/* line 83, ../sass/map.scss */
+.butlist li a {
+  text-decoration: none;
+  color: white;
+}
+
+/* line 91, ../sass/map.scss */
+.main {
+  margin-top: 50px;
+}
+/* line 93, ../sass/map.scss */
+.main .col1 {
+  width: 49%;
+  display: inline-block;
+  vertical-align: top;
+}
+@media only screen and (max-width: 950px) {
+  /* line 93, ../sass/map.scss */
+  .main .col1 {
+    width: 100%;
+    display: block;
+  }
+}
+/* line 101, ../sass/map.scss */
+.main .col1 .info {
+  margin-top: 50px;
+  font-family: 'Oswald', sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  vertical-align: top;
+  width: 60%;
+}
+@media only screen and (max-width: 950px) {
+  /* line 101, ../sass/map.scss */
+  .main .col1 .info {
+    text-align: center;
+  }
+}
+/* line 110, ../sass/map.scss */
+.main .col1 .info .infohead {
+  font-size: 30px;
+  font-weight: bold;
+}
+@media only screen and (max-width: 950px) {
+  /* line 110, ../sass/map.scss */
+  .main .col1 .info .infohead {
+    font-size: 22px;
+  }
+}
+/* line 117, ../sass/map.scss */
+.main .col1 .info .infotext {
+  font-size: 20px;
+}
+@media only screen and (max-width: 950px) {
+  /* line 117, ../sass/map.scss */
+  .main .col1 .info .infotext {
+    font-size: 18px;
+  }
+}
+/* line 122, ../sass/map.scss */
+.main .col1 .info .infotext #gotohome {
+  margin-top: 50px;
+  width: 200px;
+  border: 2px solid black;
+  background: white;
+  color: black;
+  padding: 10px;
+  font-size: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+/* line 131, ../sass/map.scss */
+.main .col1 .info .infotext #gotohome:hover {
+  background-color: black;
+  color: white;
+  transition: 0.5s;
+}
+/* line 142, ../sass/map.scss */
+.main .col2 {
+  width: 49%;
+  display: inline-block;
+}
+@media only screen and (max-width: 950px) {
+  /* line 142, ../sass/map.scss */
+  .main .col2 {
+    width: 100%;
+    display: block;
+  }
+}
+
+/* line 152, ../sass/map.scss */
+#map {
+  margin: 0 auto;
+  width: 450px;
+  height: 450px;
+  margin-top: 30px;
+  background-color: grey;
+}
+@media only screen and (max-width: 550px) {
+  /* line 152, ../sass/map.scss */
+  #map {
+    width: 250px;
+    height: 250px;
+  }
+}

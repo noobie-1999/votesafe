@@ -1,0 +1,154 @@
+@mixin bgimg {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    -webkit-background-repeat: no-repeat;
+    -webkit-background-position: center;
+    -webkit-background-size: cover;
+    -webkit-background-attachment: fixed;
+}
+
+@mixin center-align {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+@mixin links {
+    text-decoration: none;
+}
+
+
+body{
+	margin:0;
+}
+.logo{
+	width:50%;
+	display:inline-block;
+	@media only screen and (max-width:649px) {
+		width:100%;
+		@include center-align;
+	}
+	@media only screen and (min-width:650px) {
+		float:left;
+	}
+	.logopic{
+		width:250px;
+		@media only screen and (max-width:649px) {
+			@include center-align;
+		}
+	}
+}
+.butlist{
+	padding:0;
+	margin:0;
+	width:50%;
+	display:inline-block;
+	@media only screen and (max-width:649px) {
+		width:100%;
+		@include center-align;
+	}
+	.butres{
+		@media only screen and (max-width:649px) {
+			width:341px;
+			@include center-align;
+		}
+		@media only screen and (max-width:500px) {
+			width:285px;
+		}
+	}
+	li{
+		margin:15px;
+		padding:15px;
+		font-size:25px;
+		display:inline-block;
+		font-family: 'Fira Sans', sans-serif;
+		color:white;
+		text-align:center;
+		@media only screen and (min-width:650px) {
+			float:right;
+		}
+		@media only screen and (max-width:649px) {
+			// width:100%;
+			// @include center-align;
+			border:2px solid white;
+			font-weight:bold;
+		}
+		@media only screen and (max-width:500px) {
+			font-size:20px;
+			padding:10px;
+		}
+
+		&:hover{
+			background-color:white;
+			transition:0.5s;
+			a{
+				color:black;
+			}
+
+		}
+		a{
+			@include links;
+			color:white;
+		}
+	}
+	
+}
+body{
+	background-image: url('../img/bg.jpeg');
+	@include bgimg;
+}
+
+.info{
+	margin-top:100px;
+	text-align:center;
+	color:white;
+	font-family: 'Oswald', sans-serif;
+	@include center-align;
+	width:60%;
+	.infohead{
+		font-size:30px;
+		font-weight:bold;
+	}
+	.infotext{
+		font-size:20px;
+	}
+}
+
+.pagebuts{
+	margin-top:150px;
+	.pagebut{
+		width:33%;
+		display:inline-block;
+		@media only screen and (max-width:1000px) {
+			width:100%;
+			margin-bottom:50px;
+		}
+		.pagebuttext{
+			width:50%;
+			@media only screen and (max-width:1000px) {
+				width:30%;
+			}
+			@include center-align;
+			text-align:center;
+			padding:10px;
+			font-size:20px;
+			font-weight:bold;
+			font-family: 'Oswald', sans-serif;
+			border:2px solid white;
+			&:hover{
+				background-color: white;
+				transition:0.5s;
+				a{
+					color:black;
+				}
+			}
+			a{
+				@include links;
+				color:white;
+			}
+		}
+	}
+
+}
